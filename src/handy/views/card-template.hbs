@@ -1,0 +1,12 @@
+<ul>
+
+    {{#each usercards}}
+        <li>{{this.value}},{{{this.suit}}}</li>
+    {{/each}}
+</ul>
+<!--Left action blank because the form will submit to the same url that it is on-->
+
+    <form method="GET" action="">
+    Cards: <input type="number", name="cards"><input type="submit" value="Deal!" >
+    </form>
+

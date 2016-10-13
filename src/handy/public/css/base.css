@@ -1,0 +1,22 @@
+body{
+    background-color: green;
+    color:white;
+}
+ul{
+    list-style-type: none;
+    overflow: hidden;
+
+
+
+}
+li{
+    color:black;
+    display: inline-block;
+    border-radius: 8px;
+    width:120px;
+    height: 180px;
+    background-color: white;
+    margin: 2px;
+
+}
+

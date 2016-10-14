@@ -1,0 +1,15 @@
+<div class="birds">
+<h3 class="title">Sightings</h3>
+<ul>
+{{#each birds}}
+    <li><span class="quantity">{{this.quantity}}</span> x {{this.name}}</li>
+{{/each}}
+</ul>
+
+<form method="POST">
+    <input type="text", name="bird"><br>
+    <input type="submit" value="Add another bird">
+</form>
+
+<h6>[<a href="settings">Settings</a>] </h6>
+</div>

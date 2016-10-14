@@ -1,0 +1,18 @@
+img{
+    width: 30%;
+    height: 30%;
+}
+.quantity{
+    color: yellow;
+    width: 2px;
+}
+.birds{
+    background-color: darkslategray;
+    color:white;
+}
+.birds .title{
+    color: lawngreen;
+}
+.birds a{
+    color: white;
+}

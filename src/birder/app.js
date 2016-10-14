@@ -16,7 +16,7 @@ app.set('view engine', 'hbs');
 var bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({extended : false}));
 app.use('/birds', function (req, res, next) {
-    console.log(req.method + ' ' + req.originalUrl);
+    console.log(req.method + ' ' + req.path);
     console.log('=====');
     // console.log('body: '+res.body.name);
     next();
@@ -44,8 +44,8 @@ app.get('/settings', function (req, res) {
    res.render('settings');
 });
 app.get('/birds', function (req, res) {
-    var timesSeen = undefined;
 
+    var timesSeen = undefined;
     if(req.query.times != undefined){
         var newList = [];
         timesSeen = req.query.times;
